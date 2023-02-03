@@ -165,6 +165,7 @@ include_directories(
    nodes/broadcaster.py
    nodes/listener.py
    nodes/moving_frame.py
+   nodes/static_turtle_tf2_broadcaster.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
