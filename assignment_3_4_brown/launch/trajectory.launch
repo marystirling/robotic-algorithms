@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!--<arg name="model" default="$(find assignment_3_4)/urdf/ur5_robot.urdf" />-->
+  <!--<param name="robot_description" textfile="$(arg model)" />-->
+
+  <!--
+  <node
+      name="robot_state_publisher" 
+      pkg="robot_state_publisher" 
+      type="robot_state_publisher" 
+      output="screen" >
+  </node>
+  -->
+  
+  <node 
+      pkg="assignment_3_4" 
+      type="trajectory"
+      name="trajectory"  
+      output="screen" >
+  </node>
+  
+  <node
+      name="rviz" 
+      pkg="rviz"
+      type="rviz"
+      args="-d $(find assignment_3_4)/assignment_3_4.rviz" required="true" >
+  </node>
+  
+</launch>
